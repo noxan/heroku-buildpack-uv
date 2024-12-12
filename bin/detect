@@ -2,10 +2,10 @@
 
 # this pack is valid for apps with a pyproject.toml in the root
 if [ -f $1/pyproject.toml ]; then
-  echo "Found pyproject.toml"
+  echo "UV"
 
   if [ -f $1/uv.lock ]; then
-    echo "Found uv.lock"
+    echo "UV (with lockfile)"
   fi
 
   exit 0
