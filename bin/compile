@@ -18,11 +18,11 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # add to path
 export PATH="$HOME/.local/bin:$PATH"
 
-# switch to build directory
-cd $1
-
 # setup python
 uv python install
+
+# switch to build directory
+cd $1
 
 # install dependencies
 uv sync
