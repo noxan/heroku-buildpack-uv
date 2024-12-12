@@ -17,7 +17,7 @@ Example usage:
     ...
     -----> Heroku receiving push
     -----> Fetching custom buildpack
-    -----> HelloFramework app detected
-    -----> Found a hello.txt
+    -----> UV app detected
+    -----> Found a pyproject.toml
 
 The buildpack will require your app to have a `pyproject.toml` in the root.
