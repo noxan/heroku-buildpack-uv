@@ -9,11 +9,11 @@ Usage
 Example usage:
 
     $ ls
-    hello.txt
+    uv init
 
-    $ heroku create --buildpack http://github.com/heroku/heroku-buildpack-hello.git
+    $ heroku create --buildpack http://github.com/noxan/heroku-buildpack-uv.git
 
-    $ git push heroku master
+    $ git push heroku main
     ...
     -----> Heroku receiving push
     -----> Fetching custom buildpack
