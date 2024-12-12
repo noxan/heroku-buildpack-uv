@@ -12,5 +12,5 @@ if [ ! -s $1/pyproject.toml ]; then
   exit 1
 fi
 
-# replace hello with goodbye in a new file
-cat $1/hello.txt | sed -e "s/[Hh]ello/Goodbye/g" > $1/goodbye.txt
+# install astral uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
