@@ -14,7 +14,9 @@ fi
 
 # install astral uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
-source $HOME/.local/bin/env
+
+# add to path
+export PATH="$HOME/.local/bin:$PATH"
 
 # setup python
 uv python install
