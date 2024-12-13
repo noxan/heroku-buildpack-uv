@@ -28,7 +28,7 @@ export PATH="$HOME/.local/bin:$PATH"
 cd $1
 
 # export dependencies for pip
-uv pip freeze > requirements.txt
+uv export --extra heroku > requirements.txt
 
 # install dependencies
 # uv sync
