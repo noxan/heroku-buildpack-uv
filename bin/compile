@@ -19,13 +19,18 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 export PATH="$HOME/.local/bin:$PATH"
 
 # global installation
-export UV_PROJECT_ENVIRONMENT=/usr/local/
+# export UV_PROJECT_ENVIRONMENT=/usr/local/
 
 # setup python
-uv python install
+# uv python install
 
 # switch to build directory
 cd $1
 
+# export dependencies for pip
+uv pip freeze > requirements.txt
+
 # install dependencies
-uv sync
+# uv sync
+
+# export python version
