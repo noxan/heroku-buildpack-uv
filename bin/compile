@@ -27,6 +27,9 @@ export PATH="$HOME/.local/bin:$PATH"
 # switch to build directory
 cd $1
 
+# write python version to file
+cat uv.lock | grep '^requires-python' | grep -o '[0-9]\+\.[0-9]\+\(\.[0-9]\+\)\?' > .python-version
+
 # export dependencies for pip
 uv export --extra heroku > requirements.txt
 
